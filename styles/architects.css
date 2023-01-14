@@ -1,7 +1,7 @@
-/* font  */
+/* Font  */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Poppins:wght@500&display=swap');
 
-/* ---------common styles-------- */
+/* ---------Common-Syles-------- */
 body {
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
@@ -13,7 +13,7 @@ body {
     font-weight: 400px;
 }
 
-/* ---------nav-bar--------- */
+/* ---------Nav-Bar--------- */
 header {
     background: rgba(255, 144, 14, 0.1);
 }
@@ -35,7 +35,7 @@ header {
     flex-wrap: wrap;
 }
 
-/* ---------banner-section-------- */
+/* ---------Banner-Section-------- */
 
 .banner-container {
     height: 127vh;
@@ -71,7 +71,8 @@ header {
     margin: 40px 130px;
 }
 
-/* ------------section----------- */
+/* ------------Section----------- */
+
 .container {
     /* display: flex; */
     height: 70vh;
@@ -96,9 +97,23 @@ header {
 .right-container {
     justify-content: center;
     width: auto;
+    padding-top: 50px;
 }
 
-/* --------main-section---------- */
+.right-container h2{
+    font-weight: 500;
+    font-size: 45px;
+}
+
+.quick-list{
+    color: #727272;   
+}
+
+.features{
+   color: #FF900E; 
+}
+
+/* --------Main-Section---------- */
 
 .main-container {
     display: flex;
@@ -122,7 +137,6 @@ header {
     width: 560px;
     height: 150px;
     background: #FFFFFF;
-    /* box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15); */
     padding-left: 20px;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
     border-radius: 10px;
@@ -192,24 +206,61 @@ header {
     padding: 20px 0;
 }
 
-/* ------------sponspor-section-------------- */
+/* ------------Sponspor-Section-------------- */
 
 .sponspor-section {
     text-align: center;
     margin: 50px 130px;
 }
-.logo-container{
+
+.logo-container {
     display: flex;
     justify-content: space-evenly;
 }
 
 .logo-items {
     width: 95.83px;
-    height: 30px;    
+    height: 30px;
 }
 
 .sponspor-section h2 {
     font-weight: 700;
     font-size: 35px;
     color: #131313;
+}
+
+/* --------Extra-Section-------- */
+
+.extra-section{
+    width: 82%;
+    height: 40vh;
+    margin: 80px 130px;
+    background: #f0d58b;
+    text-shadow: #131313;
+    text-align: center;
+    padding-top: 50px;
+}
+.social .fa-brands{
+    height: 30px;
+    width: 30px;
+    
+}
+
+
+/* -------Footer---------- */
+.footer {
+    width: 80%;
+    height: 50px;
+    background: #FFF4E7;
+    border-radius: 8px;
+    text-align: center;
+    padding: 5px;
+    margin: 70px 130px;
+  
+}
+
+.copyright {
+    color: #424242;
+    font-weight: 400;
+    font-size: 14px;
 }
