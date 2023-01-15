@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
 }
 
@@ -6,59 +6,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Poppins:wght@500&display=swap');
 
 /* ---------Common-Syles-------- */
-body{
+body {
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
     margin: 0 auto;
     max-width: 100%;
 }
 
-.description{
+.description {
     color: #727272;
     font-size: 16px;
     font-weight: 450px;
 }
 
 /* ---------Nav-Bar--------- */
-header{
+header {
     background: rgba(255, 144, 14, 0.1);
 }
 
-.nav-container{
+.nav-container {
     width: 100%;
     display: flex;
-    justify-content: space-around;   
+    justify-content: space-around;
 }
 
-.items{
+.nav-title {
+    color: #131313;
+    font-weight: 700;
+    font-size: 35px;
+}
+.nav-title span{
+    color: #FF900E;
+}
+
+.items {
     display: flex;
     list-style: none;
     flex-wrap: wrap;
 }
 
-.item{
+.item {
     padding: 20px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    font-size: 18px;
+    font-weight: 500px;
+    color: #424242;
 }
 
 /* ---------Banner-Section-------- */
 
-.banner-container{
+.banner-container {
     height: 120vh;
     max-width: 100%;
 }
 
-.banner-title{
+.banner-title {
     text-align: center;
 }
 
-.banner-title h1{
+.banner-title h1 {
     font-weight: 700;
     font-size: 64px;
     color: #131313;
 }
 
-.btn-explore{
+.btn-explore {
     border: none;
     padding: 15px;
     color: #FFFFFF;
@@ -70,7 +82,7 @@ header{
     font-size: 20px;
 }
 
-.banner-image img{
+.banner-image img {
     border-radius: 8px;
     height: 70%;
     margin: 40px 130px;
@@ -79,68 +91,67 @@ header{
 
 /* ------------Section----------- */
 
-.container{
+.container {
     height: 80vh;
     max-width: 80%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 50px 0 130px 130px;   
+    margin: 50px 0 130px 130px;
 }
 
-.left-container{
-    width: 700px;   
+.left-container {
+    width: 700px;
 }
 
-.left-container img{
+.left-container img {
     border-radius: 8px;
     width: 300px;
-    height: 300px;  
+    height: 300px;
 }
 
-.right-container{
+.right-container {
     justify-content: center;
     width: auto;
     padding-top: 100px;
 }
 
-.right-container h2{
+.right-container h2 {
     font-weight: 500;
     font-size: 45px;
 }
 
-.quick-list{
-    color: #727272;   
+.quick-list {
+    color: #727272;
 }
 
-.features{
-   color: #FF900E; 
+.features {
+    color: #FF900E;
 }
 
 /* --------Main-Section---------- */
 
-.main-container{
+.main-container {
     display: flex;
     margin: 0 125px;
     height: 150vh;
     padding-top: 50px;
     gap: 10px;
-    /* margin-top: 50px; */
-    
     width: 80%;
 }
 
-.container-title h2{
+.container-title h2 {
     font-weight: 700;
     font-size: 45px;
     border-left: 7px solid #FF900E;
     padding-left: 10px;
 }
-.sub-container{
+
+.sub-container {
     padding-bottom: 20px;
 }
-    
 
-.container-info{
+
+.container-info {
     width: 550px;
     height: 150px;
     background: #FFFFFF;
@@ -150,19 +161,19 @@ header{
     grid-row-gap: 15px;
 }
 
-.container-info h3{
+.container-info h3 {
     font-weight: 600;
     font-size: 20px;
     padding-top: 15px;
 }
 
-.container-image img{
+.container-image img {
     width: 560px;
     height: 950px;
     padding-left: 15px;
 }
 
-.btn-experience{
+.btn-experience {
     border: none;
     color: #FFFFFF;
     background: #FF900E;
@@ -177,43 +188,45 @@ header{
     justify-content: center;
 }
 
-.primary{
+.primary {
     justify-content: center;
     margin: 0 660px;
     margin-top: -260px;
 }
 
-.primary small{
+.primary small {
     font-size: 14px;
     font-weight: 400px;
 }
 
 /* -------Some Facts Section--------- */
-.some-facts-section{
+.some-facts-section {
     margin: 100px 120px;
 }
 
-.facts-title{
+.facts-title {
     font-weight: 700;
     font-size: 45px;
 }
 
-.box-items{
+.box-items {
     display: flex;
     justify-content: space-around;
     margin: 100px 10px;
+    /* width: 200px;
+    margin: auto; */
 }
 
-.number{
+.number {
     font-weight: 600;
     font-size: 25px;
-   
+
 }
-.box-item ,.box-item-right{
+
+.box-item,
+.box-item-right {
     background-color: rgba(255, 143, 14, 0.100);
     padding: 20px;
-    display: flex;
-    align-items: center;
     flex-direction: column;
     border-radius: 10px;
     border: 1px solid #FF900E;
@@ -222,15 +235,17 @@ header{
     transition: all .3s linear;
     height: 200px;
     width: 200px;
+    margin: auto;
+    text-align: center;
 }
 
-.box-item:hover{
+.box-item:hover {
     background-color: rgba(255, 143, 14);
     transform: rotate(-5deg) scale(105%);
     transition: all .3s linear;
 }
 
-.box-item-right:hover{
+.box-item-right:hover {
     background-color: rgba(255, 143, 14);
     transform: rotate(5deg) scale(105%);
     transition: all .3s linear;
@@ -262,20 +277,20 @@ header{
 
 /* --------Extra-Section-------- */
 
-.extra-section{
+.extra-section {
     width: 80%;
     height: 40vh;
     margin: 80px 130px;
     background: #f5c894;
-   
+
     text-align: center;
     padding-top: 50px;
-    font-size: 20px;   
+    font-size: 20px;
 }
 
-.social .fa-brands{
+.social .fa-brands {
     height: 30px;
-    width: 30px;  
+    width: 30px;
 }
 
 
@@ -287,7 +302,7 @@ header{
     border-radius: 8px;
     text-align: center;
     padding: 5px;
-    margin: 70px 130px; 
+    margin: 70px 130px;
 }
 
 .copyright {
@@ -297,13 +312,13 @@ header{
 }
 
 /* ------Media-Quariy---------- */
- @media only screen and (max-width:576px) {
-    body{
+@media only screen and (max-width:576px) {
+    body {
         max-width: 100%;
 
     }
-    
 
 
-    
- }
+
+
+}
