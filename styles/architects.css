@@ -94,6 +94,7 @@ header {
 .container {
     height: 80vh;
     max-width: 80%;
+    flex-wrap: wrap;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 50px 0 130px 130px;
@@ -206,7 +207,7 @@ header {
 
 .facts-title {
     font-weight: 700;
-    font-size: 45px;
+    font-size: 35px;
 }
 
 .box-items {
@@ -315,8 +316,33 @@ header {
 @media only screen and (max-width:576px) {
     body {
         max-width: 100%;
-
     }
+
+    .banner-image img {
+        border-radius: 8px;
+        height: 70%;
+        margin: auto;
+        width: 100%;
+
+        
+    }
+    .container {
+        
+        max-width: 80%;
+        padding: 0;
+        
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+       
+    }
+    .left-container img {
+        border-radius: 8px;
+        width: 100px;
+        height: 100px;
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    
 
 
 
