@@ -6,6 +6,9 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+    border: 1px solid red;
+    max-width: 95%;
 }
 
 .description {
@@ -23,6 +26,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-around;
+    
 }
 
 .items {
@@ -40,7 +44,8 @@ header {
 
 .banner-container {
     height: 127vh;
-    width: 100%;
+    /* width: 100%; */
+    max-width: 100%;
 }
 
 .banner-title {
@@ -67,38 +72,43 @@ header {
 
 .banner-image img {
     border-radius: 8px;
-    width: 80%;
+    /* width: 80%; */
     height: 70%;
     margin: 40px 130px;
+    max-width: 80%;
 }
 
 /* ------------Section----------- */
 
 .container {
     /* display: flex; */
-    height: 70vh;
-    width: 80%;
+    height: 80vh;
+    max-width: 80%;
+    /* width: 80%; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 50px 0 130px 130px;
-    gap: 20px;
+   
+   
 }
 
 .left-container {
     width: 700px;
+   
 }
 
 .left-container img {
     border-radius: 8px;
     width: 300px;
     height: 300px;
-    grid-gap: 20px;
+    
+   
 }
 
 .right-container {
     justify-content: center;
     width: auto;
-    padding-top: 50px;
+    padding-top: 100px;
 }
 
 .right-container h2{
@@ -125,7 +135,7 @@ header {
     margin-top: 100px;
     padding-bottom: 0;
     margin-bottom: 0;
-    width: 70%;
+    width: 80%;
 }
 
 .container-title h2 {
@@ -152,7 +162,7 @@ header {
 }
 
 .container-image img {
-    width: 600px;
+    width: 560px;
     height: 950px;
     padding-left: 15px;
 }
@@ -174,8 +184,8 @@ header {
 
 .primary {
     justify-content: center;
-    margin: 0 640px;
-    margin-top: -310px;
+    margin: 0 620px;
+    margin-top: -220px;
 }
 .primary small{
     font-size: 14px;
@@ -222,6 +232,7 @@ header {
 .logo-container {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .logo-items {
@@ -238,7 +249,7 @@ header {
 /* --------Extra-Section-------- */
 
 .extra-section{
-    width: 81%;
+    width: 80%;
     height: 40vh;
     margin: 80px 130px;
     background: #f5c894;
@@ -272,3 +283,15 @@ header {
     font-weight: 400;
     font-size: 14px;
 }
+
+/* ------Media-Quariy---------- */
+ @media only screen and (max-width:576px) {
+    body{
+        max-width: 100%;
+
+    }
+    
+
+
+    
+ }
