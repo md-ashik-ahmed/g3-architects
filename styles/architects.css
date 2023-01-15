@@ -145,7 +145,7 @@ header {
 }
 
 .container-info {
-    width: 500px;
+    width: 550px;
     height: 150px;
     background: #FFFFFF;
     padding-left: 20px;
@@ -183,8 +183,8 @@ header {
 
 .primary {
     justify-content: center;
-    margin: 0 620px;
-    margin-top: -220px;
+    margin: 0 660px;
+    margin-top: -210px;
 }
 .primary small{
     font-size: 14px;
