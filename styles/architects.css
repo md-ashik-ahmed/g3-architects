@@ -314,6 +314,10 @@ header {
 
 /* ------Media-Quariy---------- */
 @media only screen and (max-width:576px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
     body {
         max-width: 100%;
     }
@@ -324,33 +328,43 @@ header {
 
     .banner-image img {
         border-radius: 8px;
-        height: 80%;
+        height: ;
         margin: auto;
         width: 100%;
-        padding: 20px;
-
-        
+        height: 100%;
+        padding: 20px;    
     }
+    
     .container {
         
         max-width: 80%;
         padding: 0;
         
         grid-template-columns: repeat(1, 1fr);
-        flex-direction: column;
-       
+        flex-direction: column;   
     }
+
     .left-container img {
         border-radius: 8px;
         width: 200px;
         height: 200px;
         grid-template-columns: repeat(1, 1fr);
         flex-wrap: wrap;
-        
+        flex-direction: column;
     }
-    
 
-
-
+    .sponspor-section {
+        text-align: center;
+        font-size: 18px;
+        align-items: center;
+        justify-content: center;
+}
 
 }
+   
+    
+        
+
+
+
+
