@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 
 /* Font  */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Poppins:wght@500&display=swap');
@@ -12,8 +15,8 @@ body {
 
 .description {
     color: #727272;
-    font-size: 14px;
-    font-weight: 400px;
+    font-size: 16px;
+    font-weight: 450px;
 }
 
 /* ---------Nav-Bar--------- */
@@ -41,7 +44,7 @@ header {
 /* ---------Banner-Section-------- */
 
 .banner-container {
-    height: 127vh;
+    height: 120vh;
     /* width: 100%; */
     max-width: 100%;
 }
@@ -123,11 +126,10 @@ header {
     display: flex;
     margin: 0 125px;
     height: 150vh;
-    padding-top: 100px;
+    padding-top: 50px;
     gap: 10px;
-    margin-top: 100px;
-    padding-bottom: 0;
-    margin-bottom: 0;
+    /* margin-top: 50px; */
+    
     width: 80%;
 }
 
@@ -137,6 +139,10 @@ header {
     border-left: 7px solid #FF900E;
     padding-left: 10px;
 }
+.sub-container{
+    padding-bottom: 20px;
+}
+    
 
 .container-info {
     width: 550px;
@@ -178,7 +184,7 @@ header {
 .primary {
     justify-content: center;
     margin: 0 660px;
-    margin-top: -210px;
+    margin-top: -260px;
 }
 
 .primary small{
@@ -204,16 +210,35 @@ header {
 
 .number {
     font-weight: 600;
-    font-size: 22px;
+    font-size: 25px;
+   
+}
+.box-item ,.box-item-right{
+    background-color: rgba(255, 143, 14, 0.100);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid #FF900E;
+    font-weight: 600;
+    color: #424242;
+    transition: all .3s linear;
+    height: 200px;
+    width: 200px;
 }
 
-.box-item {
-    border: 1px solid #FF900E;
-    border-radius: 8px;
-    height: 150px;
-    width: 200px;
-    text-align: center;
-    padding: 20px 0;
+.box-item:hover {
+    transform: rotateY(360deg);
+    background-color: rgba(255, 143, 14);
+    transform: rotate(-5deg) scale(105%);
+    transition: all .3s linear;
+}
+.box-item-right:hover {
+    transform: rotateY(360deg);
+    background-color: rgba(255, 143, 14);
+    transform: rotate(5deg) scale(105%);
+    transition: all .3s linear;
 }
 
 /* ------------Sponspor-Section-------------- */
