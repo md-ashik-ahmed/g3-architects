@@ -224,7 +224,7 @@ header {
 
 }
 
-.box-item,
+.box-item-left,
 .box-item-right {
     background-color: rgba(255, 143, 14, 0.100);
     padding: 20px;
@@ -240,7 +240,7 @@ header {
     text-align: center;
 }
 
-.box-item:hover {
+.box-item-left:hover {
     background-color: rgba(255, 143, 14);
     transform: rotate(-5deg) scale(105%);
     transition: all .3s linear;
@@ -250,6 +250,18 @@ header {
     background-color: rgba(255, 143, 14);
     transform: rotate(5deg) scale(105%);
     transition: all .3s linear;
+}
+.box-item-right:hover img{
+    transform: rotateY(360deg);
+}
+.box-item-left:hover img{
+    transform: rotateY(360deg);
+}
+.box-item-right img{
+    transition: all .2s linear;
+}
+.box-item-left img{
+    transition: all .2s linear;
 }
 
 /* ------------Sponspor-Section-------------- */
